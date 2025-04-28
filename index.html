@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<!--Definimos nuestro Head utilizando meta etiquetas para configurar sus dimensions, además enlazamos por medio de link nuestro css de estilos y los icónos que utilizamos en la web-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <title>Atte_Nails</title>
+    <link rel="stylesheet" href="./CSS/estilos.css">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!--Definimos nuestro menú principal, dónde se encuentra el nombre de nuestra web y también tenemos un nav dónde según la web en la que nos encontremos a trvés de nuestra class link-active, el color del enlace será difeerente-->
+    <header class="hero">
+        <nav class="nav_hero">
+            <div class="container nav_container">
+                <div class="logo">
+                    <h2 class="logo_name">Atte Nails<span class="point">.</span></h2>
+                </div>
+                <div class="links">
+                    <a href="#" class="link link--active">Inicio</a>
+                    <a href="./VIEW/productos.html" class="link">Productos</a>
+                    <a href="./VIEW/presupuestos.html" class="link">Presupuestos</a>
+                    <a href="./VIEW/contacto.html" class="link">Contacto</a>
+                </div>
+            </div>
+        </nav>
+
+    <!--Aqui tenemos la structura de nuestro slider principla, el que acompaña a nuetro nav, en el aparece una imagen de nuestro negocio justo con un texto y un botón-->
+        <section class="container hero_main">  
+            <div class="hero_textos">
+                <h1 class="title">Los mejores <span class="title--active">Diseños de Uñas.</span></h1> 
+                <p class="copy">Nos encargamos de hacer tus<span class="copy_active"> ideas realidad</span></p>
+                <a href="#" class="cta">Agenda una Cita</a>
+            </div>
+            <img src="./IMG/mockup2.png" alt="imagen mockup de unos pinta uñas" class="mockup" width="408" height="612">
+        </section>
+    </header>
+
+    <main>
+        <!--En esta section exponemos en un farmato de tarjets los diferentes servicios de nuestra web-->
+        <section class="services">
+            <div class="container">
+                <h2 class="subtitle">Nuestros servicios<span class="point">.</span></h2>
+                <p class="copy_section">Ofrecemos servicios personalizados y adaptados a cada uno de nuestros clientes</p>
+
+                <article class="container-cards">
+                    <div class="card">
+                        <img src="./IMG/giorgio-trovato-gb6gtiTZKB8-unsplash.jpg" alt="Marcas de pintauñas" class="card_img" width="6720" height="4480">
+                        <div class="cards_text">
+                            <p class="card_list">Especialistas en diseño de uñas semipermanentes</p>
+                            <h3 class="card_title">Marcas de Pintauñas<span class="point">.</span></h3>
+                            <p class="card_copy">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel dolorum sit molestias ipsam at veritatis ut esse eius, dolor est!</p>
+                            <a href="#" class="card_button">Las mejores marcas</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="./IMG/cut-collective-hN0uatQvBAc-unsplash.jpg" alt="Marcas de pintauñas" class="card_img" width="4000" height="6000">
+                        <div class="cards_text">
+                            <p class="card_list">Especialistas en diseño de uñas semipermanentes</p>
+                            <h3 class="card_title">Marcas de Pintauñas<span class="point">.</span></h3>
+                            <p class="card_copy">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel dolorum sit molestias ipsam at veritatis ut esse eius, dolor est!</p>
+                            <a href="#" class="card_button">Las mejores marcas</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="./IMG/anna-keibalo-T52vfZzQZ6E-unsplash.jpg"  alt="Asesoremiento personalizado" class="card_img" width="3888" height="5832">
+                        <div class="cards_text">
+                            <p class="card_list">Especialistas en diseño de uñas semipermanentes</p>
+                            <h3 class="card_title">Asesoramiento Personalizado<span class="point">.</span></h3>
+                            <p class="card_copy">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel dolorum sit molestias ipsam at veritatis ut esse eius, dolor est!</p>
+                            <a href="#" class="card_button">Atención perosnalizada</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <!--En este section definimos dos estilos básicos que trabajamos, mostrando imagenes recientes de ambos estilos, realizados por nosotros-->
+        <section class="projects container">
+            <h2 class="subtitle">Elige un estilo<span class="point">.</span></h2>
+            <p class="copy_section">Conece diferentes diseños que hemos realizado</p>
+        <!--Desarrollamos la section a través de un article dividido en un div-card en dónde dentro de este definimos un div con los contenidos de texto y otro div con el fondo, img y title de la card.-->   
+            <article class="container-bg">
+                <div class="card">
+                    <div class="cards_text">
+                        <h3 class="card_title">Manicura Francesa<span class="point">.</span></h3>
+                        <p class="card_date"> 13 de Marzo del 2025</p>
+                        <p class="card_copy">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel dolorum sit molestias ipsam at veritatis ut esse eius, dolor est!</p>
+                        <a href="#" class="card_button">Elige tu diseño</a>
+                    </div>
+                </div>
+                <div class="background">
+                    <img src="./IMG/chelson-tamares-vtQHwU4F13s-unsplash.jpg" class="background_img" alt="Imagen sobre manicura francesa" width="3376" height="5387">
+                    <div class="background_text">
+                        <h3 class="background_title">Manicura Francesa</h3>
+                        <p class="background_copy">Conoce los diferentes estilos de manicura francesa desde los clásicos a los más modernos</p>
+                    </div>
+                </div>
+            
+
+                <div class="card">
+                    <div class="cards_text">
+                        <h3 class="card_title">Diseños Personalizados<span class="point">.</span></h3>
+                        <p class="card_date">4 de Abril del 2025</p>
+                        <p class="card_copy">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel dolorum sit molestias ipsam at veritatis ut esse eius, dolor est!</p>
+                        <a href="#" class="card_button">Elige tu diseño</a>
+                    </div>
+                </div>
+                <div class="background">
+                    <img src="./IMG/allison-christine-vPrqHSLdF28-unsplash.jpg" class="background_img" alt="Imagen sobre los diseños personalizados de uñas" width="3496" height="5237">
+                    <div class="background_text">
+                        <h3 class="background_title">Diseños Personalizados</h3>
+                        <p class="background_copy">Envianos tus ideas, juntos crearemos los mejores diseños </p>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <!--Esta section consiste en un container, en el que de forma parecida a la section anterior creamos 3 contenedores, 2 de ellos tendran imgaenes de colaboradores o productos que utilizamos, y el tercero será para poner la reseña de una clienta -->
+        <section class="collaborator">
+            <div class="container">
+                <h2 class="subtitle">Algunos de nuestros colaboradores<span class="point">.</span></h2>
+                <p class="copy_section">Trabajamos con las mejores marcas y productos del mercado</p>
+
+                <div class="collaborator-container">
+                    <div class="collaborator_card">
+                    <img src="./IMG/Diseño_sin_título.png" alt="Logo de nuestro colaborador de esmaltes" class="collaborator_img" width="400" height="600">
+                        <div class="collaborator_copy">
+                            <i class='bx bxl-google collaborator_logo'></i>
+                            <div class="collaborator_info">
+                                <h3 class="collaborator_name">ESSIE</h3>
+                                <p class="collaborator_position">Esmaltes de Uñas</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="collaborator_card">
+                    <img src="./IMG/Diseño_sin_título1.png" alt="Logo de nuestro colaborador de endurecedores para uñas" class="collaborator_img" width="400" height="600">
+                        <div class="collaborator_copy">
+                            <i class='bx bxl-google collaborator_logo'></i>
+                            <div class="collaborator_info">
+                                <h3 class="collaborator_name">OPI</h3>
+                                <p class="collaborator_position">Productos de Nails</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="collaborator_card">
+                        <div class="collaborator_text">
+                            <img src="IMG/google-brand3.svg" alt="Logo de Google" class="google_logo" width="77" height="24">
+                            <p class="collaborator_history">Encantada con mi experiencia en Atte Nails. Desde que entré me sentí súper bienvenida. El lugar es hermoso y relajante, y la atención fue impecable. Me hice manicura y pedicura, ¡y el resultado fue una obra de arte! Me asesoraron con mucho cariño y acertaron con los colores y diseños. Sin duda, mi nuevo lugar de confianza. ¡Gracias por hacerme sentir tan bien!</p>
+                        </div>
+                        <div class="collaborator_copy collaborator_copy--modifier">
+                        <img src="./IMG/close-up-portrait-smiling-short-haired-business-woman-white-t-shirt-posing-with-arms-crossed-white-office.jpg" alt="imagen de clienta satisfecha" class="collaborator_logo logo--picture" width="3662" height="5493">
+                                <div class="collaborator_info">
+                                    <h3 class="collaborator_name">Maria Medina</h3>
+                                    <p class="collaborator_position">Clienta de Atte Nails</p>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--En esta section tenemos unos checks para mostrar los clientes satisfechos, junto con un form-newsletter en dónde creamso un input para que el cliente pueda enviar su email para subcirbirse a una newsletter que crearemos próximamente-->
+        <section class="email container container--modifier">
+            <h2 class="subtitle subtitle--modifier">Somos un centro especializado de diseño y confección de uñas<span class="point">.</span></h2>
+            <p class="copy_section copy_section--modifier">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab, et dolore id necessitatibus quibusdam rem accusamus fugiat doloremque voluptatibus eius!</p>
+
+            <div class="check">
+                <div class="check_item">
+                    <i class='bx bx-check' ></i>
+                    <div class="check_numbers">
+                        <p class="check_number">+200</p>
+                        <p class="check_copy">Clientas Satisfechas</p>
+                    </div>
+                </div>
+                <div class="check_item">
+                    <i class='bx bx-check' ></i>
+                    <div class="check_numbers">
+                        <p class="check_number">+200</p>
+                        <p class="check_copy">Clientas Satisfechas</p>
+                    </div>
+                </div>
+                <div class="check_item">
+                    <i class='bx bx-check' ></i>
+                    <div class="check_numbers">
+                        <p class="check_number">+200</p>
+                        <p class="check_copy">Clientas Satisfechas</p>
+                    </div>
+                </div>
+            </div>
+            <form class="newsletter">
+                <input type="text" class="newsletter_input" placeholder="Ingresa tu email">
+                <input type="submit" class="newsletter_submit" value="Comienza hoy">
+            </form>
+        </section>
+    </main>
+<!--Encontramos el footer, es EL MISMO PARA TODAS LAS PAGINAS en el encontramos una Section dónde creamos un aaratdo para que los usuarios accedan a una futura app para laas reservas de sus citas-->
+<!--También encontramos un peqqueño apartado dónde a través de unos enlaces permitimos a los usuarios que accedan a las Poíticas de Privacidad y a los Terminos y Condiciones-->
+    <footer class="footer">
+        <div class="container footer_caption">
+            <section class="download">
+                <h3 class="title_footer">Descarga nuestra App</h3>
+                <div class="download_app">
+                    <div class="download_item">
+                        <i class='bx bxl-apple download_logo' ></i>
+                        <h4 class="download_title">App Store</h4>
+                    </div>
+                    <div class="download_item">
+                        <i class='bx bxl-play-store download_logo' ></i>
+                        <h4 class="download_title">Play Store</h4>
+                    </div>
+                </div>
+                <div class="footer_copy">
+                    <p class="copyright">AtteNails &copy; 2025 Todos los derechos reservados</p>
+    
+                    <a href="#" class="politica_privacidad politica_privacidad--margin">Politica de privacidad</a>
+                    <a href="#" class="politica_privacidad ">Terminos y condiciones</a>
+                </div>
+            </section>
+<!--En esta section creamos un segundo form paecido al anterior, para que los usuarios introduzcan su email-->
+<!--También creamos un div socialmedia para compartir enlaces a diferentes redes sociales de la marca-->
+            <section class="get-email">
+                <h3 class="title_footer">¿Quieres pedir una cita?</h3>
+                <form class="newsletter newsletter--modifier">
+                    <input type="text" class="newsletter_input" placeholder="Ingresa tu email">
+                    <input type="submit" class="newsletter_submit" value="Comienza hoy">
+                </form>
+                <div class="socialmedia">
+                    <p class="socialmedia_legend">Siguenos en:</p>
+                    <a href="https://www.facebook.com/"> <i class='socialmedia_icon bx bxl-facebook-circle' ></i> </a>
+                    <a href="https://www.instagram.com/"> <i class='socialmedia_icon bx bxl-instagram' ></i> </a>
+                    <a href="https://www.youtube.com/ "> <i class='socialmedia_icon bx bxl-youtube' ></i> </a>
+                    <a href="https://x.com/"> <i class='socialmedia_icon bx bxl-twitter' ></i> </a>
+
+                 </div>
+            </section>
+        </div>
+<!--En esta ultima section creamos a ravés de un div un pie de pagina final homogeneo para todas las paginas, en dónde encontamos el nombre de la web, el correo corporativo, la dirección y un mensaje de CONTACTANOS AHORA-->
+        <div class="contact">
+            <div class="item_contact">
+                <i class='bx bx-copyright contact_icon' ></i>
+                <h3 class="contact_title">Atte Nails</h3>   
+            </div>
+            <div class="item_contact">
+                <i class='bx bx-mail-send contact_icon' ></i>
+                <h3 class="contact_title">info@attenails.com</h3>
+            </div>
+            <div class="item_contact">
+                <i class='bx bx-map' ></i>
+                <h3 class="contact_title">Avenida de Canarias</h3>
+            </div>
+            <div class="item_contact item__contact--colour-principal">
+                <i class='bx bxs-chat contact_icon contact_icon--modifier' ></i>
+                <h3 class="contact_title">Contactanos ahora</h3>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

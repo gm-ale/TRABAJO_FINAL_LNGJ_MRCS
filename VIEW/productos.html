@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atte_Nails</title>
+    <link rel="stylesheet" href="../CSS/estilos.css">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="hero">
+        <nav class="nav_hero">
+            <div class="container nav_container">
+                <div class="logo">
+                    <h2 class="logo_name">Atte Nails<span class="point">.</span></h2>
+                </div>
+                <div class="links">
+                    <a href="../index.html" class="link">Inicio</a>
+                    <a href="../VIEW/productos.html" class="link--active">Productos</a>
+                    <a href="../VIEW/presupuestos.html" class="link">Presupuestos</a>
+                    <a href="../VIEW/contacto.html" class="link">Contacto</a>
+                </div>
+            </div>
+        </nav>
+
+        <section class="container hero_main">  
+            <div class="hero_textos">
+                <h1 class="title">Conoce<span class="title--active"> Nuestros.</span></h1> 
+                <p class="copy">Productos y <span class="copy_active">Servicios</span></p>
+                <a href="#" class="cta">Agenda una Cita</a>
+            </div>
+            <img src="../IMG/FreeSample-Vectorizer-io-mockup72.png" alt="imagen mockup de unos pinta uñas" class="mockup" width="800" height="403">
+        </section>
+    </header>  
+<!--Incorporamos un section para indicar que encontarar el usuario, en este caso una Galería de imagenes de trabajos realizados-->
+    <section class="services">
+        <div class="container">
+            <h2 class="subtitle">Conoce e Inspirate<span class="point">.</span></h2>
+            <p class="copy_section">En esta galaería encontraras todos nuestros trabajos y diseños.</p>
+        </div>
+    </section>
+<!--Creamos una galería de imagenes a través de un div, para visualizarlas todas a la vez utilizamos un formato en cuadricula de 4x2 en lg-->
+    <div class="galery-products">
+        <a href="#img1" ><img src="../IMG/What1.jpeg" alt="imagen de servicios realizado 1" width="1536" height="2048"></a>
+        <a href="#img2" ><img src="../IMG/What2.jpeg" alt="imagen de servicios realizado 2" width="1536" height="2048"></a>
+        <a href="#img3" ><img src="../IMG/What3.jpeg" alt="imagen de servicios realizado 3" width="1536" height="2048"></a>
+        <a href="#img4" ><img src="../IMG/What4.jpeg" alt="imagen de servicios realizado 4" width="2048" height="1536"></a>
+        <a href="#img5" ><img src="../IMG/What5.jpeg" alt="imagen de servicios realizado 5" width="1536" height="2048"></a>
+        <a href="#img6" ><img src="../IMG/What6.jpeg" alt="imagen de servicios realizado 6" width="2048" height="1536"></a>
+        <a href="#img7" ><img src="../IMG/allison-christine-vPrqHSLdF28-unsplash.jpg" alt="imagen de servicios realizado 7" width="3496" height="5237"></a>
+        <a href="#img8" ><img src="../IMG/chelson-tamares-vtQHwU4F13s-unsplash.jpg" alt="imagen de servicios realizado 8" width="3376" height="5387"></a>
+
+<!--Como podemos ver las imagenes de la galería están enlazadas cada una de manera independientea a un div propio-->
+<!--OBJETIVO hacer más interactiva la web de manera sencilla, permitiendo al usuario acceder independientemete a una visualización única de cada imagen-->
+        <!--Para aumenta la experiencia añadimos en cada caja a través de etiquetas <a> la posibilidad de cambiar de una imagen a otra y de cerrar el desplegable-->
+        <div class="light-box" id="img1">
+            <a href="#img6" class="next"><i class='bx bx-left-arrow-alt'></i></a>
+            <img src="../IMG/What1.jpeg" alt="imagen de servicios realizado 1" width="1536" height="2048">
+            <a href="#img2" class="next"><i class='bx bx-right-arrow-alt'></i></a>
+            <a href="#" class="close">X</a>  
+        </div>
+    
+        <div class="light-box" id="img2">
+            <a href="#img1" class="next"><i class='bx bx-left-arrow-alt'></i></a>
+            <img src="../IMG/What2.jpeg" alt="imagen de servicios realizado 2" width="1536" height="2048">
+            <a href="#img3" class="next"><i class='bx bx-right-arrow-alt'></i></a>
+            <a href="#" class="close">X</a>  
+        </div>
+    
+        <div class="light-box" id="img3">
+            <a href="#img2" class="next"><i class='bx bx-left-arrow-alt'></i></a>
+            <img src="../IMG/What3.jpeg" alt="imagen de servicios realizado 3" width="1536" height="2048">
+            <a href="#img4" class="next"><i class='bx bx-right-arrow-alt'></i></a>
+            <a href="#" class="close">X</a>  
+        </div>
+    
+        <div class="light-box" id="img4">
+            <a href="#img3" class="next"><i class='bx bx-left-arrow-alt'></i></a>
+            <img src="../IMG/What4.jpeg" alt="imagen de servicios realizado 4" width="2048" height="1536">
+            <a href="#img5" class="next"><i class='bx bx-right-arrow-alt'></i></a>
+            <a href="#" class="close">X</a>  
+        </div>
+    
+        <div class="light-box" id="img5">
+            <a href="#img4" class="next"><i class='bx bx-left-arrow-alt'></i></a>
+            <img src="../IMG/What5.jpeg" alt="imagen de servicios realizado 5" width="1536" height="2048">
+            <a href="#img6" class="next"><i class='bx bx-right-arrow-alt'></i></a>
+            <a href="#" class="close">X</a>  
+        </div>
+    
+        <div class="light-box" id="img6">
+            <a href="#img5" class="next"><i class='bx bx-left-arrow-alt'></i></a>
+            <img src="../IMG/What6.jpeg" alt="imagen de servicios realizado 6" width="2048" height="1536">
+            <a href="#img7" class="next"><i class='bx bx-right-arrow-alt'></i></a>
+            <a href="#" class="close">X</a>  
+        </div>
+
+        <div class="light-box" id="img7">
+            <a href="#img6" class="next"><i class='bx bx-left-arrow-alt'></i></a>
+            <img src="../IMG/allison-christine-vPrqHSLdF28-unsplash.jpg" alt="imagen de servicios realizado 7" width="3496" height="5237">
+            <a href="#img8" class="next"><i class='bx bx-right-arrow-alt'></i></a>
+            <a href="#" class="close">X</a>  
+        </div>   
+        
+        <div class="light-box" id="img8">
+            <a href="#img7" class="next"><i class='bx bx-left-arrow-alt'></i></a>
+            <img src="../IMG/chelson-tamares-vtQHwU4F13s-unsplash.jpg" alt="imagen de servicios realizado 8" width="3376" height="5387">
+            <a href="#img1" class="next"><i class='bx bx-right-arrow-alt'></i></a>
+            <a href="#" class="close">X</a>  
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        <div class="container footer_caption">
+            <section class="download">
+                <h3 class="title_footer">Descarga nuestra App</h3>
+                <div class="download_app">
+                    <div class="download_item">
+                        <i class='bx bxl-apple download_logo' ></i>
+                        <h4 class="download_title">App Store</h4>
+                    </div>
+                    <div class="download_item">
+                        <i class='bx bxl-play-store download_logo' ></i>
+                        <h4 class="download_title">Play Store</h4>
+                    </div>
+                </div>
+                <div class="footer_copy">
+                    <p class="copyright">AtteNails &copy; 2025 Todos los derechos reservados</p>
+    
+                    <a href="#" class="politica_privacidad politica_privacidad--margin">Politica de privacidad</a>
+                    <a href="#" class="politica_privacidad ">Terminos y condiciones</a>
+                </div>
+            </section>
+            <section class="get-email">
+                <h3 class="title_footer">¿Quieres pedir una cita?</h3>
+                <form class="newsletter newsletter--modifier">
+                    <input type="text" class="newsletter_input" placeholder="Ingresa tu email">
+                    <input type="submit" class="newsletter_submit" value="Comienza hoy">
+                </form>
+                <div class="socialmedia">
+                    <p class="socialmedia_legend">Siguenos en:</p>
+                    <a href="https://www.facebook.com/"> <i class='socialmedia_icon bx bxl-facebook-circle' ></i> </a>
+                    <a href="https://www.instagram.com/"> <i class='socialmedia_icon bx bxl-instagram' ></i> </a>
+                    <a href="https://www.youtube.com/ "> <i class='socialmedia_icon bx bxl-youtube' ></i> </a>
+                    <a href="https://x.com/"> <i class='socialmedia_icon bx bxl-twitter' ></i> </a>
+                 </div>
+            </section>
+        </div>
+    
+        <div class="contact">
+            <div class="item_contact">
+                <i class='bx bx-copyright contact_icon' ></i>
+                <h3 class="contact_title">Atte Nails</h3>   
+            </div>
+            <div class="item_contact">
+                <i class='bx bx-mail-send contact_icon' ></i>
+                <h3 class="contact_title">info@attenails.com</h3>
+            </div>
+            <div class="item_contact">
+                <i class='bx bx-map' ></i>
+                <h3 class="contact_title">Avenida de Canarias</h3>
+            </div>
+            <div class="item_contact item__contact--colour-principal">
+                <i class='bx bxs-chat contact_icon contact_icon--modifier' ></i>
+                <h3 class="contact_title">Contactanos ahora</h3>
+            </div>
+        </div>
+    </footer>    
+</body>
+</html>

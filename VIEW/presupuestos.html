@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atte_Nails</title>
+    <link rel="stylesheet" href="../CSS/estilos.css">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="hero">
+        <nav class="nav_hero">
+            <div class="container nav_container">
+                <div class="logo">
+                    <h2 class="logo_name">Atte Nails<span class="point">.</span></h2>
+                </div>
+                <div class="links">
+                    <a href="../index.html" class="link">Inicio</a>
+                    <a href="../VIEW/productos.html" class="link">Productos</a>
+                    <a href="../VIEW/presupuestos.html" class="link--active">Presupuestos</a>
+                    <a href="../VIEW/contacto.html" class="link link">Contacto</a>
+                </div>
+            </div>
+        </nav>
+
+        <section class="container hero_main">  
+            <div class="hero_textos">
+                <h2 class="title">Solicita Ahora <span class="title--active"> Tu Presupuesto.</span></h2> 
+                <p class="copy">Rellena el siguiente<span class="copy_active"> Formulario</span></p>
+                <a href="#" class="cta">Contactanos</a>
+            </div>
+            <img src="../IMG/mockup_presupuestos2.png" alt="imagen mockup de unos pinta uñas" class="mockup" width="385" height="612">
+        </section>
+
+    </header>
+
+    <section class="services">
+        <div class="container">
+            <h2 class="subtitle">Rellena el Formulario<span class="point">.</span></h2>
+            <p class="copy_section">Adjunta tus datos y elige el tema de tu consulta.</p>
+        </div>
+    </section>
+<!--Creamos un div, dónde dentro escribiremos un formulario form, dicho formulario lo utilizaremos como una via de contacto con el usuario, para que este realice consultas-->
+    <div class="form-container">
+        <form class="form" id="miFormulario">
+            <header class="header_form">
+                <h1>Formulario de consulta</h1>
+            </header>
+    <!--El form estará compuesto por diferentes input con los que guíamos al usurio los datos que necesitamos para que nos envie su consulta-->
+            <label for="name" class="label_form">Nombre:</label>  
+            <input type="text" class="input_form" name="nombre" id="name" required pattern="[A-Za-zÁÉÍÓÚáéíóúñÑ\s]" title="Introduzca su nombre"> 
+    
+            <label for="mail" class="label_form">E-mail:</label>  
+            <input type="email" class="input_form" name="email" id="mail" required title="Introduce una dirección de correo válida.">   
+    
+            <label for="phone" class="label_form">Teléfono:</label>  
+            <input type="tel" class="input_form" name="telefono" id="phone" required pattern="[0-9]{9}" title="Introduce un  número de teléfono válido">  
+    
+            <label for="consulta" class="label_form">Solicite más información:</label>  
+            <textarea class="text_form" name="consulta" id="consulta" cols="30" rows="10" placeholder="Escriba su consulta" required title="Escriba su consulta"></textarea>
+
+    <!--Un detalle que añadimos a este form es un checkbox para que marque las políticas de privacidad-->
+            
+    <!-- Checkbox de política de privacidad -->
+            <label class="label_form">
+                <input type="checkbox" id="politica" required>
+                Acepto la <a href="#" class="politica-link">Política de privacidad</a>
+            </label>
+    
+            <input type="submit" class="enviar" value="Enviar su consulta">
+            <p id="mensaje"></p>
+        </form>
+    </div>
+
+      <footer class="footer">
+        <div class="container footer_caption">
+            <section class="download">
+                <h3 class="title_footer">Descarga nuestra App</h3>
+                <div class="download_app">
+                    <div class="download_item">
+                        <i class='bx bxl-apple download_logo' ></i>
+                        <h4 class="download_title">App Store</h4>
+                    </div>
+                    <div class="download_item">
+                        <i class='bx bxl-play-store download_logo' ></i>
+                        <h4 class="download_title">Play Store</h4>
+                    </div>
+                </div>
+                <div class="footer_copy">
+                    <p class="copyright">AtteNails &copy; 2025 Todos los derechos reservados</p>
+    
+                    <a href="#" class="politica_privacidad politica_privacidad--margin">Politica de privacidad</a>
+                    <a href="#" class="politica_privacidad ">Terminos y condiciones</a>
+                </div>
+            </section>
+            <section class="get-email">
+                <h3 class="title_footer">¿Quieres pedir una cita?</h3>
+                <form class="newsletter newsletter--modifier">
+                    <input type="text" class="newsletter_input" placeholder="Ingresa tu email">
+                    <input type="submit" class="newsletter_submit" value="Comienza hoy">
+                </form>
+                <div class="socialmedia">
+                    <p class="socialmedia_legend">Siguenos en:</p>
+                    <a href="https://www.facebook.com/"> <i class='socialmedia_icon bx bxl-facebook-circle' ></i> </a>
+                    <a href="https://www.instagram.com/"> <i class='socialmedia_icon bx bxl-instagram' ></i> </a>
+                    <a href="https://www.youtube.com/ "> <i class='socialmedia_icon bx bxl-youtube' ></i> </a>
+                    <a href="https://x.com/"> <i class='socialmedia_icon bx bxl-twitter' ></i> </a>
+                 </div>
+            </section>
+        </div>
+    
+        <div class="contact">
+            <div class="item_contact">
+                <i class='bx bx-copyright contact_icon' ></i>
+                <h3 class="contact_title">Atte Nails</h3>   
+            </div>
+            <div class="item_contact">
+                <i class='bx bx-mail-send contact_icon' ></i>
+                <h3 class="contact_title">info@attenails.com</h3>
+            </div>
+            <div class="item_contact">
+                <i class='bx bx-map' ></i>
+                <h3 class="contact_title">Avenida de Canarias</h3>
+            </div>
+            <div class="item_contact item__contact--colour-principal">
+                <i class='bx bxs-chat contact_icon contact_icon--modifier' ></i>
+                <h3 class="contact_title">Contactanos ahora</h3>
+            </div>
+        </div>
+    </footer>    
+</body>
+
+
+</html>

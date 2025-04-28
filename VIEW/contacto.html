@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atte_Nails</title>
+    <link rel="stylesheet" href="../CSS/estilos.css">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="hero">
+        
+        <nav class="nav_hero">
+            <div class="container nav_container">
+                <div class="logo">
+                    <h2 class="logo_name">Atte Nails<span class="point">.</span></h2>
+                </div>
+                <div class="links">
+                    <a href="../index.html" class="link">Inicio</a>
+                    <a href="../VIEW/productos.html" class="link">Productos</a>
+                    <a href="../VIEW/presupuestos.html" class="link">Presupuestos</a>
+                    <a href="../VIEW/contacto.html" class="link link--active">Contacto</a>
+                </div>
+            </div>
+        </nav>
+
+        <section class="container hero_main">  
+            <div class="hero_textos">
+                <h1 class="title">Contactanos<span class="title--active"> Ahora.</span></h1> 
+                <p class="copy">Nos encargamos de hacer<span class="copy_active"> tus ideas realidad</span></p>
+                <a href="#" class="cta">Agenda una Cita</a>
+            </div>
+            <img src="../IMG/mockup_contacto.png" alt="imagen mockup de unos pinta uñas" class="mockup" width="385" height="612">
+        </section>
+
+    </header>
+
+    <!--En esta parte en vez de crear una section, utilizamos un div principal que hará de contenedor de otros 2 div secundarios-->
+    <!--En el 1º intoduciremos la información de contacto de nuestro negocio-->
+    <div class="contact-container">
+        <div class="info-contact">
+            <h2> Contactanos</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Voluptatum natus consequatur repellendus officia assumenda distinctio dolore eveniet? 
+            Nesciunt, dicta sit.</p>
+            <a href="#"><i class='bx bxs-phone'></i> 928-000-000</a>
+            <a href="#"><i class='bx bxs-envelope'></i>info@attenails.com</a>
+            <a href="#"><i class='bx bx-map'></i> Gran Canaria, España.</a>
+        </div>
+        
+    <!--En el 2º enlazaremos un mapa de google maps con la localización física de nuestro negocio-->
+        <div class="contact-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d683.6277039464684!2d-15.442965098701766!3d27.84874278207431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc409f0580fc442f%3A0x19505c1bbb7ebc8d!2sAv.%20de%20Canarias%2C%2035110%20Vecindario%2C%20Las%20Palmas!5e1!3m2!1ses!2ses!4v1745261353021!5m2!1ses!2ses" width="100" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container footer_caption">
+            <section class="download">
+                <h3 class="title_footer">Descarga nuestra App</h3>
+                <div class="download_app">
+                    <div class="download_item">
+                        <i class='bx bxl-apple download_logo' ></i>
+                        <h4 class="download_title">App Store</h4>
+                    </div>
+                    <div class="download_item">
+                        <i class='bx bxl-play-store download_logo' ></i>
+                        <h4 class="download_title">Play Store</h4>
+                    </div>
+                </div>
+                <div class="footer_copy">
+                    <p class="copyright">AtteNails &copy; 2025 Todos los derechos reservados</p>
+    
+                    <a href="#" class="politica_privacidad politica_privacidad--margin">Politica de privacidad</a>
+                    <a href="#" class="politica_privacidad ">Terminos y condiciones</a>
+                </div>
+            </section>
+            <section class="get-email">
+                <h3 class="title_footer">¿Quieres pedir una cita?</h3>
+                <form class="newsletter newsletter--modifier">
+                    <input type="text" class="newsletter_input" placeholder="Ingresa tu email">
+                    <input type="submit" class="newsletter_submit" value="Comienza hoy">
+                </form>
+                <div class="socialmedia">
+                    <p class="socialmedia_legend">Siguenos en:</p>
+                    <a href="https://www.facebook.com/"> <i class='socialmedia_icon bx bxl-facebook-circle' ></i> </a>
+                    <a href="https://www.instagram.com/"> <i class='socialmedia_icon bx bxl-instagram' ></i> </a>
+                    <a href="https://www.youtube.com/ "> <i class='socialmedia_icon bx bxl-youtube' ></i> </a>
+                    <a href="https://x.com/"> <i class='socialmedia_icon bx bxl-twitter' ></i> </a>
+                 </div>
+            </section>
+        </div>
+    
+        <div class="contact">
+            <div class="item_contact">
+                <i class='bx bx-copyright contact_icon' ></i>
+                <h3 class="contact_title">Atte Nails</h3>   
+            </div>
+            <div class="item_contact">
+                <i class='bx bx-mail-send contact_icon' ></i>
+                <h3 class="contact_title">info@attenails.com</h3>
+            </div>
+            <div class="item_contact">
+                <i class='bx bx-map' ></i>
+                <h3 class="contact_title">Avenida de Canarias</h3>
+            </div>
+            <div class="item_contact item__contact--colour-principal">
+                <i class='bx bxs-chat contact_icon contact_icon--modifier' ></i>
+                <h3 class="contact_title">Contactanos ahora</h3>
+            </div>
+        </div>
+    </footer>    
+</body>
+</html>
